@@ -479,7 +479,7 @@
 @mixin makeColumn($column: 1) {
   float: left;
   margin-left: $gridGutterWidth;
-  width: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns - 1));
+  width: ($gridColumnWidth * $column) + ($gridGutterWidth * ($column - 1));
 }
 
 // Le grid system
