@@ -476,10 +476,10 @@
   @extend .clearfix;
 }
 
-@mixin makeColumn($column: 1) {
+@mixin makeColumn($columns: 1, $offset: 0) {
   float: left;
-  margin-left: $gridGutterWidth;
-  width: ($gridColumnWidth * $column) + ($gridGutterWidth * ($column - 1));
+  margin-left: ($gridColumnWidth * $offset) + ($gridGutterWidth * ($offset - 1)) + ($gridGutterWidth * 2);
+  width: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns - 1));
 }
 
 // Le grid system
